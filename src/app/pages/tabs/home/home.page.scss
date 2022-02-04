@@ -1,0 +1,24 @@
+ion-header {
+  ion-icon {
+    font-size: 1rem;
+  }
+  // ion-title {  has been declared globally
+  //   font-weight: bold;
+  // }
+}
+
+ion-label{
+  // font-size: 0.9rem;
+  h4{
+    font-weight: bold !important;
+    font-size: 1.2rem;
+  }
+  p{
+    font-size:0.7rem;
+  }
+}
+
+//spacing on top after search bar
+ion-list-header {
+  margin-top: 3vh;
+}
