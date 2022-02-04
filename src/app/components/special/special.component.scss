@@ -1,0 +1,20 @@
+// banner components styling
+
+ion-slides {
+  --bullet-background:black;
+  height: 30vh;
+  div {
+    height: 20vh;
+    width: 94%;
+    margin: auto;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    margin-top: 1vh;
+  }
+}
+
+// specials {
+//   border-bottom: 1.5vh solid var(--ion-color-light);
+// }

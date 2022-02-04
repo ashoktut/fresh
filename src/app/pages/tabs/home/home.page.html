@@ -1,0 +1,42 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Home</ion-title>
+  </ion-toolbar>
+  <ion-searchbar placeholder="search items here"></ion-searchbar>
+</ion-header>
+
+<ion-content>
+
+    <!-- Heading for Categories or Featured Brands -->
+    <ion-list-header>
+      <ion-label>
+        <h4>Specials</h4>
+        <p>Limited Time</p>
+      </ion-label>
+    </ion-list-header>
+
+  <!-- specials sale banners -->
+  <app-special [specialsImages]="specials"></app-special>
+
+  <ion-list>
+    <!-- Heading for Categories or Featured Brands -->
+    <ion-list-header class="ion-margin-bottom">
+      <ion-label>
+        <h4>Categories</h4>
+        <p>Discover unique tastes near you</p>
+      </ion-label>
+    </ion-list-header>
+
+    <!-- grid for the product categories -->
+    <!-- <ion-list *ngIf="!isLoading"> -->
+
+      <ion-item-group *ngIf="categories?.length > 0">
+        <app-category
+          *ngFor="let category of categories"
+          [category]="category"
+          [routerLink]="['/', 'tabs', 'categories', category.uid]">
+        </app-category>
+      </ion-item-group>
+  </ion-list>
+
+</ion-content>

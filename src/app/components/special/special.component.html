@@ -1,0 +1,8 @@
+  <!-- specials component -->
+  <div class="specials" *ngIf="specialsImages.length > 0">
+    <ion-slides pager="true" [options]="slideOptions">
+      <ion-slide *ngFor='let image of specialsImages'>
+        <div [ngStyle]="{'background-image':'url(' + image.special + ')'}"></div>
+      </ion-slide>
+    </ion-slides>
+  </div>
