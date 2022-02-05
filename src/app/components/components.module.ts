@@ -13,6 +13,8 @@ import { CategoryComponent } from './category/category.component';
     CommonModule,
     IonicModule,
   ],
-  exports: [CategoryComponent]
+  exports: [
+    CategoryComponent,
+  ]
 })
 export class ComponentsModule { }

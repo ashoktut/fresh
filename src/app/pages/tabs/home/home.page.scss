@@ -5,6 +5,11 @@ ion-header {
   // ion-title {  has been declared globally
   //   font-weight: bold;
   // }
+
+  // search bar
+  ion-searchbar {
+    border-radius: 30px;
+  }
 }
 
 ion-label{
@@ -18,7 +23,6 @@ ion-label{
   }
 }
 
-//spacing on top after search bar
-ion-list-header {
-  margin-top: 3vh;
-}
+
+
+
