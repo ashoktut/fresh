@@ -1,0 +1,21 @@
+//spacing on top after search bar
+ion-list-header {
+  margin-top: 2vh;
+}
+
+ion-card {
+  // height: 20vh;
+  // width: 94%;
+  // margin: auto;
+  // background-position: center;
+  // background-size: cover;
+  // background-repeat: no-repeat;
+  // border-radius: 30px;
+  // margin-top: 1vh;
+
+  display: flex;
+  flex-direction: column;
+  width: 100% !important;
+  margin: 0 !important;
+  border-radius: 30px;
+}

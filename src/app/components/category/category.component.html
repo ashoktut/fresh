@@ -1,4 +1,4 @@
-<ion-item lines="none">
+<!-- <ion-item >
   <ion-thumbnail slot = "start">
     <img [src]="category?.cover ? category.cover : 'assets/imgs/1.jpg'"/>
   </ion-thumbnail>
@@ -18,4 +18,55 @@
       </p>
     </ion-text>
   </ion-label>
-</ion-item>
+</ion-item> -->
+
+<!-- <ion-card>
+  <ion-grid>
+    <ion-row class="ion-text-center">
+      <ion-col size="4" routerLink="/tabs/home">
+        <ion-icon name="home-outline" size="large"></ion-icon>
+        <p>Chicken</p>
+      </ion-col>
+
+      <ion-col size="4" routerLink="/tabs/home">
+        <ion-icon name="home-outline" size="large"></ion-icon>
+        <p>Beef</p>
+      </ion-col>
+      <ion-col size="4" routerLink="/tabs/home">
+        <ion-icon name="home-outline" size="large"></ion-icon>
+        <p>Vegetarian</p>
+      </ion-col>
+
+      <ion-col size="4" routerLink="/tabs/home">
+        <ion-icon name="home-outline" size="large"></ion-icon>
+        <p>Extras</p>
+      </ion-col>
+      <ion-col size="4" routerLink="/tabs/home">
+        <ion-icon name="home-outline" size="large"></ion-icon>
+        <p>Snacks</p>
+      </ion-col>
+      <ion-col size="4" routerLink="/tabs/home">
+        <ion-icon name="home-outline" size="large"></ion-icon>
+        <p>Drinks</p>
+      </ion-col>
+    </ion-row>
+
+  </ion-grid>
+</ion-card> -->
+
+
+
+
+  <ion-grid>
+    <ion-col size="10">
+      <ion-row class="ion-text-center">
+        <ion-col size="4" *ngFor="let category of categories">
+          <ion-card>
+              <img src="{{category.cover}}" alt="">
+          </ion-card>
+          <p>{{category.name}}</p>
+        </ion-col>
+      </ion-row>
+    </ion-col>
+  </ion-grid>
+
