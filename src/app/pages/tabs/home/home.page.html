@@ -2,7 +2,7 @@
   <ion-toolbar>
     <ion-title>Home</ion-title>
   </ion-toolbar>
-  <ion-searchbar placeholder="search items here"></ion-searchbar>
+  <!-- <ion-searchbar placeholder="search items here"></ion-searchbar> -->
 </ion-header>
 
 <ion-content>
@@ -54,7 +54,10 @@
         </ion-grid>
       </div> -->
 
-      <app-category routerLink="/tabs/search"></app-category>
 
+      <!-- <app-category routerLink="/tabs/items/:category.uid"></app-category> -->
 
+        <app-category
+          [routerLink]="['/', 'tabs','items']">
+        </app-category>
 </ion-content>

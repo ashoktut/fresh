@@ -1,19 +1,21 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { CategoryComponent } from 'src/app/components/category/category.component';
 
-import { HomePage } from './home.page';
+import { ItemsPage } from './items.page';
 
 const routes: Routes = [
   {
     path: '',
-    component: HomePage
+    component: ItemsPage
   },
-  { path: 'items', component: CategoryComponent },
+  {
+    path: 'cart',
+    loadChildren: () => import('./../cart/cart.module').then( m => m.CartPageModule)
+  }
 ];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule],
 })
-export class HomePageRoutingModule {}
+export class ItemsPageRoutingModule {}
