@@ -61,8 +61,8 @@
     <ion-col size="10">
       <ion-row class="ion-text-center">
         <ion-col size="4" *ngFor="let category of categories">
-          <ion-card>
-              <img src="{{category.cover}}" alt="">
+          <ion-card >
+              <img [src]="category?.cover ? category.cover : 'assets/images/categories/chicken3.jpg'" alt="">
           </ion-card>
           <p>{{category.name}}</p>
         </ion-col>

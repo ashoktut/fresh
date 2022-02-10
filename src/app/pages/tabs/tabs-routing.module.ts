@@ -29,12 +29,17 @@ const routes: Routes = [
         redirectTo: '/tabs/home',
         pathMatch: 'full'
       }
-    ],
+    ]
   },
   {
     path: 'search',
     loadChildren: () => import('./search/search.module').then( m => m.SearchPageModule)
   },
+  {
+    path: 'items',
+    loadChildren: () => import('./items/items.module').then( m => m.ItemsPageModule)
+  },
+
 ];
 
 @NgModule({
